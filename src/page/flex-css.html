@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>felx box</title>
+  </head>
+  <body>
+
+<style>
+    div {
+      border: solid 5px dodgerblue;
+      font-size: 40px;
+    }
+
+
+
+    .flex-container div {
+    box-sizing: border-box;
+    }
+
+/*
+    .flex-container  {
+      display: flex;
+      height: 300px;
+      width: 600px;
+    }
+
+
+    .flex-container div:nth-child(3) {
+    background-color: #444;
+    order: 1;
+    order: 0;
+    order: -1;
+    align-self: center;
+  align-self: flex-end;
+  align-self: stretch;
+
+
+
+    }
+
+        .flex-container div {
+        width:100px;
+        flex-grow: 0px;
+        flex-grow: 1;
+
+        }
+
+
+                .flex-container div {
+                width:300px;
+                flex-shrink:1;
+
+                }
+
+        .flex-container div:nth-child(1) {
+    flex-shrink: 5;
+
+}  */
+
+
+ /* flex-box 3 */
+
+
+ .flex-container div {
+ box-sizing: border-box;
+ }
+
+
+ .flex-container  {
+   display:flex;
+   flex-direction:row;
+ }
+
+ .flex-container div {
+   flex-basis: 100px;
+   width:200px;
+ }
+
+ .flex-container div:nth-child(4) {
+  flex: 3 6 100px;
+
+}
+.flex-container  {
+  width:300px;
+}
+
+    </style>
+
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+
+    </div>
+
+
+  </body>
+</html>
